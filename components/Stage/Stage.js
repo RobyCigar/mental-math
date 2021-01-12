@@ -1,7 +1,7 @@
 let data = [
 	{
-		question: "7 + 7",
-		answer: "14"
+		question: "4 + 7",
+		answer: "11"
 	},
 
 	{
