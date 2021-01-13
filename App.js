@@ -10,13 +10,10 @@ import { useFonts, Quicksand_700Bold as quicksand } from '@expo-google-fonts/qui
 // Import my own components
 import GamePlay from './components/GamePlay';
 import HomeScreen from './components/HomeScreen';
-import LevelsScreen from './components/Levels';
 import About from './components/About';
 import GameOver from './components/GameOver';
 import {data} from './components/Stage/Stage';
 
-SplashScreen.preventAutoHideAsync();
-setTimeout(SplashScreen.hideAsync, 5000);
 
 const Stack = createStackNavigator();
 
@@ -53,10 +50,6 @@ export default function App() {
 
         <Stack.Screen name="GameScreen">
           {props => <GamePlay {...props} score={score} setScore={setScore} data={data}/>}
-        </Stack.Screen>
-        
-        <Stack.Screen name="LevelsScreen">
-          {props => <LevelsScreen {...props} data={data}/>}
         </Stack.Screen>
 
         <Stack.Screen name="AboutScreen" component={About}/>

@@ -15,12 +15,12 @@ export default function GamePlay({navigation, data, score, setScore}) {
 
 	const submitHandler = () => {
 		if(value == answer) {
-			console.log("bnar")
+			console.log("answer correct")
 			setLevel(level + 1);
-			setScore(score + 20)
+			setScore(score + Math.floor(Math.random() * 20) )
 		} else {
 			setLife(life - 1)
-
+			
 			if(life == "1") {
 				navigation.navigate('GameOver');
 				setLife(3)
@@ -33,6 +33,7 @@ export default function GamePlay({navigation, data, score, setScore}) {
 
 	const goHome = () => {
 		navigation.navigate("HomeScreen")
+		setScore(0)
 	}
 
 

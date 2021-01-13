@@ -33,12 +33,6 @@ export default function HomeScreen({navigation, data}) {
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={ToLevels} style={styles.textContainer}>
-        <View>
-          <Text style={styles.text}>Levels</Text>
-        </View>
-      </TouchableOpacity>
-
       <TouchableOpacity onPress={ToAbout} style={styles.textContainer}>
         <View>
           <Text style={styles.text}>About</Text>

@@ -32,7 +32,7 @@ export default function GameOver({navigation, score, setScore}) {
 
 const styles = StyleSheet.create({
 	container: {
-		backgroundColor: 'red',
+		backgroundColor: '#161616',
 		height: '100%'
 	},
 
