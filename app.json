@@ -5,6 +5,8 @@
     "name": "mental-math",
     "slug": "mental-math",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "assetBundlePatterns": [
       "**/*"
     ],
